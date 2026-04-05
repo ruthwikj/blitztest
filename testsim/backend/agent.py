@@ -1,7 +1,11 @@
 import json
+import os
 import re
 import asyncio
 from typing import Any, Dict
+
+from dotenv import load_dotenv
+load_dotenv()
 
 from browser_use import Agent
 from langchain_anthropic import ChatAnthropic
